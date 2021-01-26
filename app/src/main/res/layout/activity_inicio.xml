@@ -67,10 +67,11 @@
         app:startIconDrawable="@drawable/time"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/ubermovetextregular"
-            android:inputType="time"
+            android:focusableInTouchMode="false"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
