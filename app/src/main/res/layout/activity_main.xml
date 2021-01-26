@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/black"
+
    >
 
-    <ImageView
-        android:id="@+id/txtPrincipal"
-        android:layout_width="300dp"
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_uber_pickups_logo_white_rgb_logo_copia"/>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/my_nav" />
 </LinearLayout>

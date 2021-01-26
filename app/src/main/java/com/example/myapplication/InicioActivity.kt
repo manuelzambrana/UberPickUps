@@ -21,16 +21,17 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         var autoCompleteTextView: AutoCompleteTextView = findViewById(R.id.autoCompleteText)
-        val option = arrayOf("a", "b", "c","a", "b", "c","a", "b", "c","a", "b", "c","a", "b", "c","a", "b", "c")
+
+        val option = arrayOf("Newark Airport"," John F. Kennedy International airport", "Laguardia Airport", "SOHO","CHINATOWNZONA", "LITTLE ITALY", "CHELSEA","MIDTOWN", "LINCOLN SQUARE", "TRIBECA","BOWERY", "MIDTOWN SOUTH", "WEST VILLAGE","CLINTON")
         val arrayAdapter = ArrayAdapter(this,R.layout.option_item,option)
         autoCompleteTextView.setText(arrayAdapter.getItem(0).toString(),false)
         autoCompleteTextView.setAdapter(arrayAdapter)
-        autoCompleteTextView.threshold = 1
         autoCompleteText.dropDownHeight = 600
 
 
         inputDate.inputType = InputType.TYPE_NULL;
         inputTime.inputType = InputType.TYPE_NULL;
+
 
 
         val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->

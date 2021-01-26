@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_splash_screen.*
 import render.animations.Render
 import render.animations.Zoom
 
@@ -14,14 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val render = Render(this)
-        render.setAnimation(Zoom().In(txtPrincipal))
-        render.setDuration(1400)
-        render.start()
 
-        val mHandler = Handler()
-        mHandler.postDelayed(Runnable {
-            startActivity(Intent(this, InicioActivity::class.java))
-        }, 1600L)
+
+
     }
+
 }

@@ -43,10 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Fecha"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
         android:layout_margin="20dp"
-        app:endIconMode="custom"
-        app:startIconDrawable="@drawable/calendar"
+        app:startIconDrawable="@drawable/fecha"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputDate"
@@ -54,6 +53,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/ubermovetextregular"
             android:focusableInTouchMode="false"
+            android:enabled="true"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -61,10 +61,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Hora"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
         android:layout_margin="20dp"
         app:endIconMode="custom"
-        app:startIconDrawable="@drawable/time"
+        app:startIconDrawable="@drawable/reloj"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputTime"
@@ -72,6 +72,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/ubermovetextregular"
             android:focusableInTouchMode="false"
+            android:enabled="true"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -79,15 +80,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        app:boxStrokeColor="#BFBFBF"
         android:layout_margin="20dp"
-        app:startIconDrawable="@drawable/zona"
+        app:startIconDrawable="@drawable/pin"
 
         >
         <AutoCompleteTextView
             android:id="@+id/autoCompleteText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
+            android:enabled="true"
             android:inputType="none"
             android:fontFamily="@font/ubermovetextregular"
             />
