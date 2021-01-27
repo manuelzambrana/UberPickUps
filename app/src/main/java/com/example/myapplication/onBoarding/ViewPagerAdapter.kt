@@ -1,5 +1,6 @@
 package com.example.myapplication.onBoarding
 
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
@@ -15,6 +16,7 @@ class ViewPagerAdapter(
 
     override fun getItemCount(): Int {
         return fragmentList.size
+
     }
 
     override fun createFragment(position: Int): Fragment {

@@ -97,6 +97,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnResultadoScreen"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"

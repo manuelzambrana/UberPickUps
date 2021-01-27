@@ -1,6 +1,7 @@
 package com.example.myapplication.onBoarding
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -29,7 +30,9 @@ class ViewPagerFragment : Fragment() {
             fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle
+
         )
+        Log.d("TAG", "message")
         view.viewPager.adapter = adapter
         return view
     }

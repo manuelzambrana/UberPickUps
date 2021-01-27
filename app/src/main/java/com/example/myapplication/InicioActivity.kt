@@ -1,18 +1,18 @@
 package com.example.myapplication
 
+
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
-import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import android.widget.DatePicker
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_inicio.*
-import java.sql.Time
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 class InicioActivity : AppCompatActivity() {
     var cal: Calendar = Calendar.getInstance()
@@ -57,6 +57,11 @@ class InicioActivity : AppCompatActivity() {
         inputTime.setOnClickListener {
             TimePickerDialog(this@InicioActivity,android.R.style.Theme_DeviceDefault_Dialog_NoActionBar,timePicker,
                     cal.get(Calendar.HOUR_OF_DAY),cal.get(Calendar.MINUTE), true).show()       }
+
+        btnResultadoScreen.setOnClickListener {
+            val myIntent = Intent(this, ResultadoActivity::class.java)
+            this.startActivity(myIntent)
+        }
 
     }
     private fun updateDateInView(){

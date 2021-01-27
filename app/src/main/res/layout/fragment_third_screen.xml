@@ -15,8 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:src="@drawable/logo" />
+        app:srcCompat="@drawable/conductor_hombre"
+        tools:src="@drawable/conductor_hombre" />
 
     <TextView
         android:id="@+id/tituloThirdF"
