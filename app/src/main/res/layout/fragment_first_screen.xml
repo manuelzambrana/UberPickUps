@@ -15,10 +15,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/coche_1"
 
         tools:src="@drawable/logo"
-        tools:srcCompat="@drawable/logo" />
+        tools:srcCompat="@drawable/coche_1" />
 
     <TextView
         android:id="@+id/titulo"

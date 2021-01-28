@@ -11,7 +11,9 @@
         tools:layout="@layout/fragment_splash_screen" >
         <action
             android:id="@+id/action_splashScreen_to_viewPagerFragment"
-            app:destination="@id/viewPagerFragment" />
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashScreen_to_inicioActivity"
             app:destination="@id/inicioActivity" />

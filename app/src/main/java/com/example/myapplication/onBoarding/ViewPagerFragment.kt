@@ -26,13 +26,15 @@ class ViewPagerFragment : Fragment() {
             SecondScreen(),
             ThirdScreen()
         )
+        //variable adapter donde le pasamos el array de fragments
         val adapter = ViewPagerAdapter(
             fragmentList,
             requireActivity().supportFragmentManager,
             lifecycle
 
         )
-        Log.d("TAG", "message")
+
+        //llamamos al view del xml para pasarle el adapter y que sean deslizables  a los lados
         view.viewPager.adapter = adapter
         return view
     }
